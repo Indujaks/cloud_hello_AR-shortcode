@@ -1,0 +1,8 @@
+/*
+* The hostCloudAnchor() method schedules a background task that will begin the hosting process,
+ but the method call returns immediately, so the app's UI thread is not blocked.
+ You can check to see if the anchor was successfully hosted or not
+ by polling the state of the anchor after every session.update() call.
+*/
+
+Anchor anc = session.hostCloudAnchor(hit.createAnchor());
